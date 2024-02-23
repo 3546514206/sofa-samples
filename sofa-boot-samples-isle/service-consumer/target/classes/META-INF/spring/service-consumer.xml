@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sofa="http://sofastack.io/schema/sofaboot"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://sofastack.io/schema/sofaboot http://sofastack.io/schema/sofaboot.xsd"
+       default-autowire="byName">
+    <sofa:reference id="sampleJvmService" interface="com.alipay.sofa.isle.sample.facade.SampleJvmService">
+        <sofa:binding.jvm/>
+    </sofa:reference>
+
+    <bean id="consumer" class="com.alipay.sofa.isle.sample.consumer.JvmServiceConsumer" init-method="init"/>
+</beans>
