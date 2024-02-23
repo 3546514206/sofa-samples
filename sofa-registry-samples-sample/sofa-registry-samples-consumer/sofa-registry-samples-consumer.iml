@@ -163,7 +163,7 @@
     <orderEntry type="module" module-name="sofa-boot-autoconfigure" />
     <orderEntry type="module" module-name="sofa-registry-samples-facade" />
     <orderEntry type="module" module-name="registry-client-all" />
-    <orderEntry type="library" name="Maven: com.alipay.sofa:registry-core:5.4.2" level="project" />
+    <orderEntry type="module" module-name="registry-core" />
     <orderEntry type="module" module-name="registry-client-api" />
     <orderEntry type="library" name="Maven: com.alipay.sofa:registry-client-log:5.4.2" level="project" />
     <orderEntry type="module" module-name="registry-client-impl" />
