@@ -1,0 +1,79 @@
+
+###
+# 1、查看session角色的健康检测接口：
+GET http://150.223.210.250:9603/health/check
+Accept: application/json
+
+###
+# 2、查看meta角色的健康检测接口：
+GET http://127.0.0.1:9615/health/check
+Accept: application/json
+
+###
+# 3、查看data角色的健康检测接口：
+GET http://127.0.0.1:9622/health/check
+Accept: application/json
+
+###
+# 4、获取注册中心接口信息-从DATA服务器
+GET http://127.0.0.1:9622/digest/datum/getDataInfoIdList
+#GET http://158.223.209.181:9622/digest/datum/getDataInfoIdList
+Accept: application/json
+
+###
+# 5、获取注册中心接口信息-从SEESION服务器
+GET http://127.0.0.1:9603/digest/getDataInfoIdList
+Accept: application/json
+
+###
+# 6、测试接口，发起 RPC 通信
+GET http://127.0.0.1:9090/sofa/cal?a=1&b=2&c=1&d=10&e=5
+Accept: application/json
+
+###
+# 7、查看当前 SOFABoot 中使用 Maven 插件生成的版本信息汇总(debug 的时候不一定通过maven打包，所以不一定有信息)
+GET http://127.0.0.1:8080/actuator/versions
+Accept: application/json
+
+###
+# 8、查看应用 Readiness Check 的状况
+GET  http://127.0.0.1:8080/actuator/readiness
+Accept: application/json
+
+###
+# 9、Spring Boot 的健康检查
+GET http://localhost:8080/health
+Accept: application/json
+
+###
+# 10、查看版本
+GET http://localhost:8080/sofaboot/versions
+Accept: application/json
+
+###
+# 11、Sofa Boot 模块化，测试接口一
+GET http://localhost:8080/serviceWithoutUniqueId
+Accept: application/json
+
+###
+# 12、Sofa Boot 模块化，测试接口二
+GET http://localhost:8080/annotationImplService
+Accept: application/json
+
+###
+# 13、Sofa Boot 模块化，测试接口三
+GET http://localhost:8080/serviceClientImplService
+Accept: application/json
+
+###
+# 14、direct 接口测试
+POST http://localhost:8080/test/direct/ping
+Content-Type: application/json
+
+{
+  "request": "ping"
+}
+
+###
+
+

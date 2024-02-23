@@ -34,7 +34,7 @@
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>registry-client-all</artifactId>
-            <version>6.4.0</version>
+            <version>5.4.2</version>
         </dependency>
 
         <!-- logback classic用于日志打印 -->

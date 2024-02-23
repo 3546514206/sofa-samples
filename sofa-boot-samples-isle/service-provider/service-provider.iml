@@ -15,6 +15,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="service-facade" />
     <orderEntry type="module" module-name="runtime-sofa-boot-starter" />
     <orderEntry type="module" module-name="runtime-sofa-boot" />
     <orderEntry type="module" module-name="sofa-boot" />
